@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header section {
+  position: relative;
+  height: 45vh;
+  display: flex;
+}
+header section img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+header section h1 {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: #5b5b5b;
+  text-align: center;
+}
+header section h3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #5b5b5b;
+  text-align: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+main {
+  position: relative;
+}
+main h1 {
+  position: relative;
+  font-size: 1.3rem;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 5px 0;
+}
+main h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(224, 224, 224, 0.7);
+  z-index: -1;
+}
+main section.rangeLearningTime h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  text-align: left;
+}
+main section.rangeLearningTime p.rangeTimeTitle {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+}
+main section.rangeLearningTime div.rangeTimeTitle {
+  background-color: #c5c5c5;
+  width: 60vh;
+  align-items: center;
+  border-radius: 15px;
+}
+main section.rangeLearningTime div.rangeDate {
+  letter-spacing: 0.06rem;
+  font-style: oblique;
+  font-weight: bold;
+}
+main section.rangeLearningTime div.rangeContent {
+  margin-left: 10vh;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+main section.rangeLearningTime ul {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding-left: 35vh;
+  padding-right: 35vh;
+  list-style-type: square;
+}
+main section.rangeLearningTime ul div {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+main section.longingForCompany p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  text-align: left;
+}
+main section.longingForCompany ul {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 25vh;
+  padding-right: 25vh;
+  list-style-type: square;
+}
+main section.longingForCompany ul div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}
+main section.longingForCompany ul li.techExp {
+  letter-spacing: 0.06rem;
+}
+main section.selfIntro p,
+main section.emotionalMoment p,
+main section.selfPrinciple p,
+main section.selfDoing p,
+main section.anythingElse p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  text-align: left;
+}
+main section.selfIntro h3,
+main section.emotionalMoment h3,
+main section.selfPrinciple h3,
+main section.selfDoing h3,
+main section.anythingElse h3 {
+  margin-top: 15px;
+  padding: 5px 0;
+  text-align: center;
+  font-style: italic;
+}
+main section.selfIntro h3::before,
+main section.emotionalMoment h3::before,
+main section.selfPrinciple h3::before,
+main section.selfDoing h3::before,
+main section.anythingElse h3::before {
+  content: "";
+}
+main section.selfIntro h3::after,
+main section.emotionalMoment h3::after,
+main section.selfPrinciple h3::after,
+main section.selfDoing h3::after,
+main section.anythingElse h3::after {
+  content: "";
+}
+main section.selfIntro a:link,
+main section.emotionalMoment a:link,
+main section.selfPrinciple a:link,
+main section.selfDoing a:link,
+main section.anythingElse a:link {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: #5b5b5b;
+  font-size: larger;
+}
+main section.selfIntro a:visited,
+main section.emotionalMoment a:visited,
+main section.selfPrinciple a:visited,
+main section.selfDoing a:visited,
+main section.anythingElse a:visited {
+  color: #1d1d1d;
+}
+main section.selfIntro a:hover,
+main section.emotionalMoment a:hover,
+main section.selfPrinciple a:hover,
+main section.selfDoing a:hover,
+main section.anythingElse a:hover {
+  color: #ff8c00;
+}
+main section.emotionalMoment ol {
+  padding-left: 15px;
+  list-style-type: decimal;
+  -webkit-list-style-type: decimal;
+}
+main section.emotionalMoment ol li {
+  padding: 2px 0;
+  width: 50vh;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  list-style-type: decimal;
+  -webkit-list-style-type: decimal;
+}
+main section.selfDoingLink ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+main section.selfDoingLink p.worksDate {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: small;
+  letter-spacing: 0.06rem;
+}
+main section.selfDoingLink a.worksTitle {
+  padding-left: 12vh;
+  padding-right: 12vh;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+main section.selfDoingLink a.worksTitle:link {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  color: #5b5b5b;
+}
+main section.selfDoingLink a.worksTitle:visited {
+  color: #a7a7a7;
+}
+main section.selfDoingLink a.worksTitle:hover {
+  color: #ff8c00;
+}
+main section.selfDoingLink p.worksMethods {
+  padding-left: 45vh;
+  padding-right: 45vh;
+}
+main section.selfDoingLink hr {
+  display: block;
+  border-style: inset;
+  border-width: 1px;
+}
+main section.developpingExperience ul {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  list-style-type: square;
+}
+main section.developpingExperience li.developTitle {
+  letter-spacing: 0.06rem;
+}
+main section.developpingExperience ul div {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 10vh;
+  padding-right: 10vh;
+}/*# sourceMappingURL=styles.css.map */
