@@ -266,4 +266,9 @@ main section.developpingExperience ul div {
   margin-bottom: 5px;
   padding-left: 10vh;
   padding-right: 10vh;
+}
+main section.developpingExperience ul div p {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=styles.css.map */
