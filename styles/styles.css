@@ -20,255 +20,320 @@ h6 {
   font-weight: normal;
 }
 
-header section {
-  position: relative;
-  height: 45vh;
+header div.info {
+  padding: 10rem;
+  background-image: url(/images/header.jpg);
+  background-position: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-header section img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-}
-header section h1 {
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  font-size: 4rem;
+header div.info h1,
+header div.info h3 {
   color: #5b5b5b;
-  text-align: center;
+  align-self: center;
 }
-header section h3 {
+header div.info h1 {
+  font-size: 2.5rem;
+}
+header div.info h3 {
+  font-size: 1.2rem;
+}
+header nav {
+  background-color: #f0f0f0;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 6px -6px #777;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 1rem 1rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  color: #5b5b5b;
+  transition: all 0.3s ease-in;
+}
+header nav ul li a:hover {
+  color: #670a0a;
+}
+
+main section.selfIntro {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main section.selfIntro div.info {
+  flex-basis: 450px;
+  padding: 1rem;
+}
+main section.selfIntro div.info h1.title {
+  letter-spacing: 0.01rem;
+}
+main section.selfIntro div.info h1.title span {
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+main section.selfIntro div.info h1.title span:hover {
+  transform: translateY(-20px) rotate(15deg) scale(1.2);
+  color: #222222;
+}
+main section.selfIntro div.info h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  color: #5b5b5b;
+}
+main section.selfIntro div.info p {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+main section.selfIntro div.info h3 {
+  color: white;
+  background-color: #d5d5d5;
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+main section.selfIntro div.img {
+  flex-basis: 450px;
+}
+main section.selfIntro div.img img {
+  width: 60%;
+}
+main section.selfDoing {
+  background-color: #f0f0f0;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+main section.selfDoing section.selfDoingText {
+  width: 70%;
+}
+main section.selfDoing section.selfDoingText h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5b5b5b;
+}
+main section.selfDoing section.selfDoingText hr {
+  border-top: 0.5px dashed #5b5b5b;
+}
+main section.selfDoing section.selfDoingText a {
+  color: white;
+  background-color: #d5d5d5;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-top: 1rem;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+main section.selfDoing section.selfDoingText a:hover {
+  transform: scale(1.2);
+}
+main section.rangeLearningTime,
+main section.emotionalMoment,
+main section.selfPrinciple {
+  background-color: #f0f0f0;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+main section.rangeLearningTime section,
+main section.emotionalMoment section,
+main section.selfPrinciple section {
+  width: 70%;
+}
+main section.rangeLearningTime section h1,
+main section.emotionalMoment section h1,
+main section.selfPrinciple section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5b5b5b;
+  margin-bottom: 0.3rem;
+}
+main section.rangeLearningTime section hr,
+main section.emotionalMoment section hr,
+main section.selfPrinciple section hr {
+  border-top: 0.5px dashed #5b5b5b;
+}
+main section.rangeLearningTime section h3,
+main section.emotionalMoment section h3,
+main section.selfPrinciple section h3 {
+  text-align: center;
+  margin: 0.5rem;
+}
+main section.rangeLearningTime section h4,
+main section.emotionalMoment section h4,
+main section.selfPrinciple section h4 {
+  margin: 0.5rem;
+}
+main section.rangeLearningTime section p,
+main section.emotionalMoment section p,
+main section.selfPrinciple section p {
+  margin: 0.5rem;
+}
+main section.longingForCompany,
+main section.developpingExperience,
+main section.anythingElse {
+  background-color: #ffffff;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+main section.longingForCompany section,
+main section.developpingExperience section,
+main section.anythingElse section {
+  width: 70%;
+}
+main section.longingForCompany section h1,
+main section.developpingExperience section h1,
+main section.anythingElse section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5b5b5b;
+  margin-bottom: 0.3rem;
+}
+main section.longingForCompany section hr,
+main section.developpingExperience section hr,
+main section.anythingElse section hr {
+  border-top: 0.5px dashed #5b5b5b;
+}
+main section.longingForCompany section h3,
+main section.developpingExperience section h3,
+main section.anythingElse section h3 {
+  text-align: center;
+  margin: 0.5rem;
+}
+main section.longingForCompany section h4,
+main section.developpingExperience section h4,
+main section.anythingElse section h4 {
+  margin: 0.5rem;
+}
+main section.longingForCompany section p,
+main section.developpingExperience section p,
+main section.anythingElse section p {
+  margin: 0.5rem;
+}
+main section.selfDoingLink {
+  background-color: #ffffff;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: center;
+}
+main section.selfDoingLink section {
+  width: 70%;
+}
+main section.selfDoingLink section h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #5b5b5b;
+  margin-bottom: 0.3rem;
+}
+main section.selfDoingLink section hr {
+  border-top: 0.5px dashed #5b5b5b;
+}
+main section.selfDoingLink section div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main section.selfDoingLink section div.circles div.circle {
+  padding: 1rem;
+  flex: 0 1 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.selfDoingLink section div.circles div.circle img {
+  width: 80%;
+  border-radius: 50%;
+  transition: all 0.3s ease-in;
+  padding: 0.3rem;
+}
+main section.selfDoingLink section div.circles div.circle img:hover {
+  border: 3px solid #f0f0f0;
+}
+main section.selfDoingLink section div.circles div.circle p.date {
+  letter-spacing: 0.06rem;
+  font-size: 0.8rem;
+}
+main section.selfDoingLink section div.circles div.circle div.circle-title {
+  position: relative;
+  align-items: center;
+}
+main section.selfDoingLink section div.circles div.circle div.circle-title img {
+  width: 100%;
+  align-items: center;
+}
+main section.selfDoingLink section div.circles div.circle div.circle-title div.overlay {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.5rem;
+  text-align: center;
+}
+main section.selfDoingLink section div.circles div.circle div.circle-title div.overlay a {
+  text-decoration: none;
   color: #5b5b5b;
-  text-align: center;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-}
-
-main {
-  position: relative;
-}
-main h1 {
-  position: relative;
-  font-size: 1.3rem;
-  text-align: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  padding: 5px 0;
-}
-main h1::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(224, 224, 224, 0.7);
-  z-index: -1;
-}
-main section.rangeLearningTime h4 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  text-align: left;
-}
-main section.rangeLearningTime p.rangeTimeTitle {
-  font-size: 18px;
-  text-align: center;
   font-weight: bold;
-  color: #ffffff;
-}
-main section.rangeLearningTime div.rangeTimeTitle {
-  background-color: #c5c5c5;
-  width: 60vh;
-  align-items: center;
-  border-radius: 15px;
-}
-main section.rangeLearningTime div.rangeDate {
-  letter-spacing: 0.06rem;
-  font-style: oblique;
-  font-weight: bold;
-}
-main section.rangeLearningTime div.rangeContent {
-  margin-left: 10vh;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-main section.rangeLearningTime ul {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  padding-left: 35vh;
-  padding-right: 35vh;
-  list-style-type: square;
-}
-main section.rangeLearningTime ul div {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  padding-left: 1vh;
-  padding-right: 1vh;
-}
-main section.longingForCompany p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  text-align: left;
-}
-main section.longingForCompany ul {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 25vh;
-  padding-right: 25vh;
-  list-style-type: square;
-}
-main section.longingForCompany ul div {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 10vh;
-  padding-right: 10vh;
-}
-main section.longingForCompany ul li.techExp {
-  letter-spacing: 0.06rem;
-}
-main section.selfIntro p,
-main section.emotionalMoment p,
-main section.selfPrinciple p,
-main section.selfDoing p,
-main section.anythingElse p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  text-align: left;
-}
-main section.selfIntro h3,
-main section.emotionalMoment h3,
-main section.selfPrinciple h3,
-main section.selfDoing h3,
-main section.anythingElse h3 {
-  margin-top: 15px;
-  padding: 5px 0;
-  text-align: center;
-  font-style: italic;
-}
-main section.selfIntro h3::before,
-main section.emotionalMoment h3::before,
-main section.selfPrinciple h3::before,
-main section.selfDoing h3::before,
-main section.anythingElse h3::before {
-  content: "";
-}
-main section.selfIntro h3::after,
-main section.emotionalMoment h3::after,
-main section.selfPrinciple h3::after,
-main section.selfDoing h3::after,
-main section.anythingElse h3::after {
-  content: "";
-}
-main section.selfIntro a:link,
-main section.emotionalMoment a:link,
-main section.selfPrinciple a:link,
-main section.selfDoing a:link,
-main section.anythingElse a:link {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  color: #5b5b5b;
-  font-size: larger;
-}
-main section.selfIntro a:visited,
-main section.emotionalMoment a:visited,
-main section.selfPrinciple a:visited,
-main section.selfDoing a:visited,
-main section.anythingElse a:visited {
-  color: #a7a7a7;
-}
-main section.selfIntro a:hover,
-main section.emotionalMoment a:hover,
-main section.selfPrinciple a:hover,
-main section.selfDoing a:hover,
-main section.anythingElse a:hover {
-  color: #ff8c00;
-}
-main section.emotionalMoment ol {
-  padding-left: 15px;
-  list-style-type: decimal;
-  -webkit-list-style-type: decimal;
-}
-main section.emotionalMoment ol li {
-  padding: 2px 0;
-  width: 50vh;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  padding-left: 15px;
-  margin-bottom: 10px;
-  list-style-type: decimal;
-  -webkit-list-style-type: decimal;
-}
-main section.selfDoingLink ul {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 20vh;
-  padding-right: 20vh;
-}
-main section.selfDoingLink p.worksDate {
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: small;
-  letter-spacing: 0.06rem;
-}
-main section.selfDoingLink a.worksTitle {
-  padding-left: 12vh;
-  padding-right: 12vh;
-  margin-top: 5px;
-  font-size: 1.2rem;
-}
-main section.selfDoingLink a.worksTitle:link {
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  color: #5b5b5b;
-}
-main section.selfDoingLink a.worksTitle:visited {
-  color: #a7a7a7;
-}
-main section.selfDoingLink a.worksTitle:hover {
-  color: #ff8c00;
-}
-main section.selfDoingLink p.worksMethods {
-  padding-left: 45vh;
-  padding-right: 45vh;
-}
-main section.selfDoingLink hr {
+  transition: transform 0.3s ease;
   display: block;
-  border-style: inset;
-  border-width: 1px;
 }
-main section.developpingExperience ul {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding-left: 20vh;
-  padding-right: 20vh;
-  list-style-type: square;
+main section.selfDoingLink section div.circles div.circle div.circle-title div.overlay a:visited {
+  color: #222222;
 }
-main section.developpingExperience li.developTitle {
+main section.selfDoingLink section div.circles div.circle div.circle-title div.overlay a:hover {
+  transform: scale(1.3);
+  color: #670a0a;
+}
+main section.rangeLearningTime div.week-content,
+main section.rangeLearningTime div.day-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.rangeLearningTime div.week-content ul,
+main section.rangeLearningTime div.day-content ul {
+  list-style-type: disc;
+  margin: 0.2rem;
+}
+main section.rangeLearningTime div.week-content ul li div.rangeDate,
+main section.rangeLearningTime div.day-content ul li div.rangeDate {
   letter-spacing: 0.06rem;
-}
-main section.developpingExperience ul div {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 10vh;
-  padding-right: 10vh;
-}
-main section.developpingExperience ul div p {
   font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 5px;
+}
+main section.rangeLearningTime div.week-content ul li div.rangeContent,
+main section.rangeLearningTime div.day-content ul li div.rangeContent {
+  font-size: 0.95rem;
+}
+main section.emotionalMoment section div ol {
+  list-style-type: decimal;
+  margin: 1rem;
+}
+main section.longingForCompany section div ul,
+main section.developpingExperience section div ul {
+  list-style-type: disc;
+  padding: 1rem;
+}
+main section.anythingElse p {
+  margin: 2rem;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

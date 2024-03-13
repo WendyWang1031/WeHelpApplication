@@ -8,283 +8,397 @@
   </head>
   <body>
     <header>
-      <section>
-        <img src="./images/header.jpg" alt="background-img" />
-        <h1>WeHelp</h1>
-        <h3>薇婷的申請書</h3>
-      </section>
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="#selfIntro">個人簡介</a>
+              <a href="#selfDoing">做過什麼努力</a>
+              <a href="#selfDoingLink">作品/練習</a>
+              <a href="#rangeLearningTime">如何安排時間</a>
+              <a href="#longingForCompany">嚮往公司</a>
+              <a href="#emotionalMoment">應對負面情緒</a>
+              <a href="#developpingExperience">開發技術心得</a>
+              <a href="#selfPrinciple">人際交往原則</a>
+              <a href="#anythingElse">其他</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="info">
+        <h1 class="wehelp-title">WeHelp</h1>
+        <h3 class="wehelp-content">薇婷的申請書</h3>
+      </div>
     </header>
+
     <main>
-      <section class="selfIntro">
-        <h1>個人簡介</h1>
-        <p>
-          大家好，我是王薇婷，也可以叫我Wendy。曾擔任3D動畫師，主要參與遊戲動畫內容的製作。
-          <br />
-          在參與多個遊戲開發專案的過程中，透過與團隊合作，成功克服了各種技術上的挑戰。這些經驗深深激發了我對軟體開發的渴望。
-          <br />
-          由於遊戲產業的變遷，近幾年來，開始思考自己的職業方向。在過去的半年，做出了轉換的決定，希望將我的技能和熱情投入更廣泛的網頁前端領域。
-          <br />
-          期待能在這個充滿挑戰和機會的領域中，不斷學習和成長。
-        </p>
+      <section class="selfIntro" id="selfIntro">
+        <div class="info">
+          <h1 class="title">
+            <span>H</span><span>i</span>
+            <span>!</span>
+            <br />
+            <span>我</span><span>是</span><span>王</span><span>薇</span
+            ><span>婷</span><span>，</span><span>W</span><span>e</span
+            ><span>n</span><span>d</span><span>y</span>
+            <span>!</span>
+          </h1>
+          <p>
+            曾擔任3D動畫師，主要參與遊戲動畫內容的製作。
+            <br />
+            在參與多個遊戲開發專案的過程中，透過與團隊合作，成功克服了各種技術上的挑戰。這些經驗深深激發了我對軟體開發的渴望。
+            <br />
+            由於遊戲產業變動，近幾年，開始思考自己的職業方向。
+            <br />
+            在過去的半年，做出了轉換的決定，希望將我的技能和熱情投入更廣泛的網頁前端領域。
+            <br />
+            期待能在這充滿挑戰和機會的領域中，不斷學習和成長。
+          </p>
+          <h3>個人簡介</h3>
+        </div>
+        <div class="img">
+          <img src="./images/wendy-fixbg.png" alt="個人照片" />
+        </div>
       </section>
 
-      <section class="selfDoing">
-        <div class="selfDoingText">
+      <section class="selfDoing" id="selfDoing">
+        <section class="selfDoingText">
           <h1>為了成為軟體工程師，做過什麼努力？</h1>
+          <hr />
           <p>
-            <a href="https://github.com/WendyWang1031">點此進入GitHub</a>
+            <a href="https://github.com/WendyWang1031">GitHub</a>
             <br />
-            自上一年十月份，開始自學Udacity網站的JavaScript入門階段。這階段的學習對我的邏輯思考能力提供了很好的梳理。特別著重了對「錯誤的寶貴經驗」的認識。每日的心得總結讓我在程式語言的探索中能夠不斷練習「總結歸納與輸出」。
+            自上一年十月份，開始自學Udacity網站的JavaScript入門階段。這階段的學習對我的邏輯思考能力提供了基礎的梳理。特別著重了對「錯誤的寶貴經驗」的認識。
             <br />
             同時，我搭配學習基礎的Udemy的「全端網頁開發」教學影片，初步認識了Html與CSS，使我感受到了建構網頁和設計樣式的基本能力。
-            通過freeCodeCamp免費教學網站的練習，我希望能夠牢固奠定基礎。
+            通過freeCodeCamp教學網站練習，希望能夠牢固奠定基礎。
+            <br />
             進一步學習「克服JS奇怪的部分」，深入了解了JavaScript的框架與執行環境，作用域和閉包的概念對我來說是一個較難理解的主題，但我致力於理解其運作機制。
           </p>
-        </div>
+        </section>
       </section>
-      <section class="selfDoingLink">
-        <h1>具體作品/練習</h1>
+      <section class="selfDoingLink" id="selfDoingLink">
+        <section class="self-doing-content">
+          <h1>具體作品/練習</h1>
+          <hr />
 
-        <ul>
-          <li>
-            <p class="worksDate">2024.3月</p>
-            <a
-              href="https://wendywang1031.github.io/bouncingBallGame/"
-              target="_blank"
-              class="worksTitle"
-              >彈跳球遊戲</a
-            >
-            <p class="worksMethods">使用Html , CSS , JavaScript</p>
-          </li>
-          <li>
-            <a
-              href="https://wendywang1031.github.io/greedySnakeGame/"
-              target="_blank"
-              class="worksTitle"
-              >貪食蛇遊戲</a
-            >
-            <p class="worksMethods">使用Html , CSS , JavaScript</p>
-          </li>
-        </ul>
+          <div class="circles">
+            <div class="circle">
+              <p class="date">2024.3月</p>
 
-        <hr />
-        <ul>
-          <li>
-            <p class="worksDate">2024.2月</p>
-            <a
-              href="https://wendywang1031.github.io/CountingGrades/"
-              target="_blank"
-              class="worksTitle"
-              >計算分數網站</a
-            >
-            <p class="worksMethods">使用Html , CSS , JavaScript</p>
-          </li>
-        </ul>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/bouncingBallGame/"
+                    target="_blank"
+                    class="worksTitle"
+                    >彈跳球遊戲
+                  </a>
+                </div>
+              </div>
 
-        <hr />
-        <ul>
-          <li>
-            <p class="worksDate">2024.1月</p>
-            <a
-              href="https://wendywang1031.github.io/weatherApp/"
-              target="_blank"
-              class="worksTitle"
-              >氣象局介面</a
-            >
-            <p class="worksMethods">使用React框架</p>
-          </li>
-          <li>
-            <a
-              href="https://wendywang1031.github.io/ooxxGames/"
-              target="_blank"
-              class="worksTitle"
-              >ooxx遊戲</a
-            >
-            <p class="worksMethods">使用React框架</p>
-          </li>
-        </ul>
+              <p class="worksMethods">使用Html , CSS , JS</p>
+            </div>
 
-        <hr />
-        <ul>
-          <li>
-            <p class="worksDate">2023.12月</p>
-            <a
-              href="https://wendywang1031.github.io/Guessing-Number/"
-              target="_blank"
-              class="worksTitle"
-              >猜數字遊戲</a
-            >
-            <p class="worksMethods">使用Html , CSS , JavaScript</p>
-          </li>
-        </ul>
-      </section>
+            <div class="circle">
+              <p class="date">2024.3月</p>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/greedySnakeGame/"
+                    target="_blank"
+                    class="worksTitle"
+                    >貪食蛇遊戲</a
+                  >
+                </div>
+              </div>
 
-      <section class="rangeLearningTime">
-        <h1>如果參與這個訓練，會怎麼安排學習時間？</h1>
-        <h4>除了依照WeHelp訓練計畫的大維度三階段時程安排</h4>
-        <div class="rangeTimeTitle">
-          <p class="rangeTimeTitle">以一週來分四個時間刻度</p>
-        </div>
-        <ul>
-          <li>
-            <div class="rangeDate">週一~週二</div>
-            <div class="rangeContent">
-              開會、理解當週任務安排關鍵字，搜尋、實作
+              <p class="worksMethods">使用Html , CSS , JS</p>
             </div>
-          </li>
-          <li>
-            <div class="rangeDate">週三~週四</div>
-            <div class="rangeContent">實作、討論</div>
-          </li>
-          <li>
-            <div class="rangeDate">週五</div>
-            <div class="rangeContent">
-              與團體實體互動時間，提問、交流、實作、紀錄實體互動
+
+            <div class="circle">
+              <p class="date">2024.3月</p>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/CountingGrades/"
+                    target="_blank"
+                    class="worksTitle"
+                    >計算分數</a
+                  >
+                </div>
+              </div>
+
+              <p class="worksMethods">使用Html , CSS , JS</p>
             </div>
-          </li>
-          <li>
-            <div class="rangeDate">週六~週日</div>
-            <div class="rangeContent">
-              消化思考本週狀況、審視當週進度流程與品質、複習不熟悉主題
+
+            <div class="circle">
+              <p class="date">2024.1月</p>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/weatherApp/"
+                    target="_blank"
+                    class="worksTitle"
+                    >氣象局介面</a
+                  >
+                </div>
+              </div>
+
+              <p class="worksMethods">使用React框架</p>
             </div>
-          </li>
-        </ul>
-        <div class="rangeTimeTitle">
-          <p class="rangeTimeTitle">以一天來分為三個時間刻度</p>
-        </div>
-        <ul>
-          <li>
-            <div class="rangeDate">上午</div>
-            <div class="rangeContent">
-              開會、進度更新，釐清前日進度是否Delay，實作
+            <div class="circle">
+              <p class="date">2024.1月</p>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/ooxxGames/"
+                    target="_blank"
+                    class="worksTitle"
+                    >ooxx遊戲</a
+                  >
+                </div>
+              </div>
+
+              <p class="worksMethods">使用React框架</p>
             </div>
-          </li>
-          <li>
-            <div class="rangeDate">下午</div>
-            <div class="rangeContent">
-              實作與完成當日進度的七成為主、有問題即時與助教或導師討論
+
+            <div class="circle">
+              <p class="date">2023.12月</p>
+              <div class="circle-title">
+                <img src="./images/Cropped_Image.png" alt="circle-bg" />
+
+                <div class="overlay">
+                  <a
+                    href="https://wendywang1031.github.io/Guessing-Number/"
+                    target="_blank"
+                    class="worksTitle"
+                    >猜數字遊戲</a
+                  >
+                </div>
+              </div>
+
+              <p class="worksMethods">使用Html , CSS , JS</p>
             </div>
-          </li>
-          <li>
-            <div class="rangeDate">晚上</div>
-            <div class="rangeContent">
-              釐清當日進度狀況、複習不熟悉部分、撰寫進度報告
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="longingForCompany">
-        <h1>是否有想要加入的公司？為什麼想加入該公司？</h1>
-        <p>
-          以有興趣的電商平台公司種類為例子：蝦皮、momo、PChome
-          <br />
-          雖然對電商行業並沒有深入的專業層次認識，但作為一名喜歡購物的消費者，經常使用不同的購物電商平台，這些體驗讓我看到了電商平台在技術和用戶體驗方面的不斷提升。
-        </p>
-        <p>以下是我觀察與體驗的技術：</p>
-        <ul>
-          <li class="techExp">精確搜尋</li>
-          <div>
-            使用者給予關鍵字組合，為使用者推薦精確適合的商品，自動完成的搜尋列表，使使用者更方便省時，以及拍照或是上傳照片功能去搜尋相同或相似商品。
           </div>
-
-          <li class="techExp">個性化推薦</li>
-          <div>
-            分析用戶的瀏覽歷史、購買記錄和喜好，提供個性化的商品推薦。熱門關鍵字還能重新整理，做相似批次的推薦給使用者
-          </div>
-
-          <li class="techExp">庫存與價格更新</li>
-          <div>
-            即時性的更新商品訊息，有助於購物過程中庫存缺失或價格不一致的問題
-          </div>
-
-          <li class="techExp">配送與付款</li>
-          <div>
-            配送與付款資訊的選項多元，開放給不同付款使用習慣，以及配送選項的帶來使用者的便利
-          </div>
-        </ul>
-        <p>
-          電商平台的前端開發往往需要應付複雜的用戶介面和優化用戶體驗的挑戰，通常面臨龐大數據量和複雜的交易流程，能讓我更好理解商業運作和用戶需求，
-          <br />渴望在技術開發資源龐大的體系下，了解、學習並且能夠為公司實際產出相對應的技術開發。
-        </p>
+        </section>
       </section>
 
-      <section class="emotionalMoment">
-        <h1>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h1>
-        <p>
-          曾經申請並前往面試免費的程式學習Bootcamp，在今年一月底得知錄取失敗，當下心中感受到悲傷與挫折，花了幾個小時與挫折的情緒共存，消化與回顧面試上需要改進的地方，
-          意識到面試過程中，自己需要加強的部分，並將其記錄下來，作為往後需要特別留意的部分，並對自我激勵：其他競爭對手同學的準備與努力是更多的，這是我能夠參考與自我激勵之處。
-          消化情緒後並轉移注意力，前往健身房運動去消耗些許精力。
-          爾後，從頭審視學習計畫並作調整，把缺漏的基礎能力給重新補上，將根基打穩，
-          並且回頭尋找相對應較不熟且基礎的議題，學習網路上的教學跟做練習與熟悉程式碼。再尋求更多層面的學習營，上網搜尋且評估自身能力去尋找適合自己的學習管道，
-          <br />
-          這次的經驗我的心得是：
-        </p>
-        <h3>
-          「不同學習管道是手段之一，最終的目標還是不變的，是成為一名能夠獨立自主的Junior前端工程師。」
-        </h3>
+      <section class="rangeLearningTime" id="rangeLearningTime">
+        <section class="range-content">
+          <h1>如果參與這個訓練，會怎麼安排學習時間？</h1>
+          <hr />
+          <h4>除了依照WeHelp訓練計畫的大維度三階段時程安排</h4>
+          <div class="week-title">
+            <p class="rangeTimeTitle">- 以一週來分四個時間刻度 -</p>
+          </div>
+          <div class="week-content">
+            <ul>
+              <li>
+                <div class="rangeDate">週一~週二</div>
+                <div class="rangeContent">
+                  開會、理解當週任務安排關鍵字，搜尋、實作
+                </div>
+              </li>
+              <li>
+                <div class="rangeDate">週三~週四</div>
+                <div class="rangeContent">實作、討論</div>
+              </li>
+              <li>
+                <div class="rangeDate">週五</div>
+                <div class="rangeContent">
+                  與團體實體互動時間，提問、交流、實作、紀錄實體互動
+                </div>
+              </li>
+              <li>
+                <div class="rangeDate">週六~週日</div>
+                <div class="rangeContent">
+                  消化思考本週狀況、審視當週進度流程與品質、複習不熟悉主題
+                </div>
+              </li>
+            </ul>
+          </div>
 
-        <p>以下是遇到負面情緒狀態的處理步驟：</p>
-        <ol>
-          <li>接受情緒的流動</li>
-          <li>釐清問體所在，改善自身能把握的地方</li>
-          <li>不可控的事情，觀察與放下</li>
-        </ol>
+          <div class="day-title">
+            <p class="rangeTimeTitle">- 以一天來分為三個時間刻度 -</p>
+          </div>
+          <div class="day-content">
+            <ul>
+              <li>
+                <div class="rangeDate">上午</div>
+                <div class="rangeContent">
+                  開會、進度更新，釐清前日進度是否Delay，實作
+                </div>
+              </li>
+              <li>
+                <div class="rangeDate">下午</div>
+                <div class="rangeContent">
+                  實作與完成當日進度的七成為主、有問題即時與助教或導師討論
+                </div>
+              </li>
+              <li>
+                <div class="rangeDate">晚上</div>
+                <div class="rangeContent">
+                  釐清當日進度狀況、複習不熟悉部分、撰寫進度報告
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </section>
-      <section class="developpingExperience">
-        <h1>關於這份申請網頁，分享一個開發時的技術心得。</h1>
-        <ul>
-          <li class="developTitle">編寫設計</li>
-          <div>
-            回應問題的編寫內容是讓自己反思的機會，將內容編寫完成後的結構大綱的整理，例如：需要把內容分為大標題、段落項、說明內容的Html的樹狀結構標籤，需要清楚明白自己撰寫的內容如何整理歸納，而結構的安排也會影響到樣式的呼叫、影響範圍，此階段要至少有個大概雛形。
-          </div>
-          <div>
-            CSS樣式將預設移除，先去理解BoxModel的重要性，會影響到版面細節、間距...等等，並且先設定大致需要的版型，例如：標題需要統一對齊頁面正中間、內文需要統一上下的間距，統一的重要性影響了版面整體性的整潔。
-          </div>
-          <li class="developTitle">實現與解決問題</li>
-          <div>
-            <p>結構問題</p>
+      <section class="longingForCompany" id="longingForCompany">
+        <section class="company-content">
+          <h1>是否有想要加入的公司？為什麼想加入該公司？</h1>
+          <hr />
+          <p>
+            以有興趣的電商平台公司種類為例子：蝦皮、momo、PChome
+            <br />
+            雖然對電商行業並沒有深入的專業層次認識，但作為一名喜歡購物的消費者，經常使用不同的購物電商平台，這些體驗讓我看到了電商平台在技術和用戶體驗方面的不斷提升。
+          </p>
+          <p>以下是我觀察與體驗的技術：</p>
+          <div class="ul-content">
+            <ul>
+              <li class="techExp">精確搜尋</li>
+              <p>
+                使用者給予關鍵字組合，為使用者推薦精確適合的商品，自動完成的搜尋列表，使使用者更方便省時，以及拍照或是上傳照片功能去搜尋相同或相似商品。
+              </p>
 
-            像是子層級的樣式編輯後沒有反應，回頭檢閱結構發現母層級的樣式已被設定，所以需要將子層級另外額外獨立處置，或是需要將結構再劃分的更細節、或是將母層級的設定樣式從簡，設計過程的前置想法上的整合，大方向規劃完善才會使設計過程運作順暢。在此階段需要時常去理解「結構分類的重要性」與「設計版面的大方向」、理解得越充分，在找問題的過程才會比較順利，這是需要多次練習的。
-          </div>
-          <div>
-            <p>設計問題</p>
+              <li class="techExp">個性化推薦</li>
+              <p>
+                分析用戶的瀏覽歷史、購買記錄和喜好，提供個性化的商品推薦。熱門關鍵字還能重新整理，做相似批次的推薦給使用者
+              </p>
 
-            是除了前期的大方向版面規劃不夠完善之外，想要嘗試不同樣式類別，如果放太多風格的樣式，導致版面越來越亂，所以需要做取捨及統一樣式，由主要的風格定下後，並來回檢視版面整體的一致性，細節的安排就遵循簡單。
-          </div>
-          <div>
-            <p>Git的分支使用問題</p>
+              <li class="techExp">庫存與價格更新</li>
+              <p>
+                即時性的更新商品訊息，有助於購物過程中庫存缺失或價格不一致的問題
+              </p>
 
-            在準備把不同練習作品上傳至GitHub並成立GitHub
-            Pages，在設定使用SSH進行身份驗證，不小心把不同專案的SSH連結貼錯並且把專案內容強制覆蓋，導致專案遺失，此經驗心得是需要辨別不同專案的SSH連結，並且要識別目前要操作的分支。提醒我的是往後要與同事合作，終端機要是詢問衝突，需要更細心地找尋為什麼衝突，而不是沒搞懂運作機制就是直接覆蓋掉，此舉在往後可能會造成專案上的問題。
+              <li class="techExp">配送與付款</li>
+              <p>
+                配送與付款資訊的選項多元，開放給不同付款使用習慣，以及配送選項的帶來使用者的便利
+              </p>
+            </ul>
           </div>
-          <li class="developTitle">體會</li>
-          <ul>
-            <li class="developSmallTitle">BoxModel的熟悉度</li>
-            <div>在設定margin、padding..等等都會影響整體版面的呈現效果</div>
-            <li class="developSmallTitle">結構的整理劃分</li>
-            <div>
-              結構在初期整理得越清晰明確，中後期設計樣式會更為方便、快速
+
+          <p>
+            電商平台的前端開發往往需要應付複雜的用戶介面和優化用戶體驗的挑戰，通常面臨龐大數據量和複雜的交易流程，能讓我更好理解商業運作和用戶需求，
+            <br />渴望在技術開發資源龐大的體系下，了解、學習並且能夠為公司實際產出相對應的技術開發。
+          </p>
+        </section>
+      </section>
+
+      <section class="emotionalMoment" id="emotionalMoment">
+        <section class="emotional-content">
+          <h1>請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</h1>
+          <hr />
+          <p>
+            曾經申請並前往面試免費的程式學習Bootcamp，在今年一月底得知錄取失敗，當下心中感受到悲傷與挫折，花了幾個小時與挫折的情緒共存，消化與回顧面試上需要改進的地方，
+            意識到面試過程中，自己需要加強的部分，並將其記錄下來，作為往後需要特別留意的部分，並對自我激勵：其他競爭對手同學的準備與努力是更多的，這是我能夠參考與自我激勵之處。
+            消化情緒後並轉移注意力，前往健身房運動去消耗些許精力。
+            爾後，從頭審視學習計畫並作調整，把缺漏的基礎能力給重新補上，將根基打穩，
+            並且回頭尋找相對應較不熟且基礎的議題，學習網路上的教學跟做練習與熟悉程式碼。再尋求更多層面的學習營，上網搜尋且評估自身能力去尋找適合自己的學習管道，
+            <br />
+            這次的經驗我的心得是：
+          </p>
+          <h3>
+            「不同學習管道是手段之一，最終的目標還是不變的，是成為一名能夠獨立自主的Junior前端工程師。」
+          </h3>
+
+          <p>以下是遇到負面情緒狀態的處理步驟：</p>
+          <div>
+            <ol>
+              <li>接受情緒的流動</li>
+              <li>釐清問體所在，改善自身能把握的地方</li>
+              <li>不可控的事情，觀察與放下</li>
+            </ol>
+          </div>
+        </section>
+      </section>
+      <section class="developpingExperience" id="developpingExperience">
+        <section class="develop-content">
+          <h1>關於這份申請網頁，分享一個開發時的技術心得。</h1>
+          <hr />
+          <div class="develop-content">
+            <h3 class="developTitle">編寫設計</h3>
+            <div class="design-content">
+              <div>
+                <p class="p-content">
+                  回應問題的編寫內容是讓自己反思的機會，將內容編寫完成後的結構大綱的整理，例如：需要把內容分為大標題、段落項、說明內容的Html的樹狀結構標籤，需要清楚明白自己撰寫的內容如何整理歸納，而結構的安排也會影響到樣式的呼叫、影響範圍，此階段要至少有個大概雛形。
+                </p>
+                <p class="p-content">
+                  CSS樣式將預設移除，先去理解BoxModel的重要性，會影響到版面細節、間距...等等，並且先設定大致需要的版型，例如：標題需要統一對齊頁面正中間、內文需要統一上下的間距，統一的重要性影響了版面整體性的整潔。
+                </p>
+              </div>
             </div>
-            <li class="developSmallTitle">統一風格</li>
-            <div>
-              細節的設計不要貪心，不是越多越好，是遵循當初所定的風格來實作
+            <h3 class="developTitle">實現與解決問題</h3>
+            <div class="fix-problem">
+              <div>
+                <ul>
+                  <li>結構問題</li>
+
+                  <p>
+                    像是子層級的樣式編輯後沒有反應，回頭檢閱結構發現母層級的樣式已被設定，所以需要將子層級另外額外獨立處置，或是需要將結構再劃分的更細節、或是將母層級的設定樣式從簡，設計過程的前置想法上的整合，大方向規劃完善才會使設計過程運作順暢。在此階段需要時常去理解「結構分類的重要性」與「設計版面的大方向」、理解得越充分，在找問題的過程才會比較順利，這是需要多次練習的。
+                  </p>
+
+                  <li>設計問題</li>
+
+                  <p>
+                    是除了前期的大方向版面規劃不夠完善之外，想要嘗試不同樣式類別，如果放太多風格的樣式，導致版面越來越亂，所以需要做取捨及統一樣式，由主要的風格定下後，並來回檢視版面整體的一致性，細節的安排就遵循簡單。
+                  </p>
+                  <li>Git的分支使用問題</li>
+
+                  <p>
+                    在準備把不同練習作品上傳至GitHub並成立GitHub
+                    Pages，在設定使用SSH進行身份驗證，不小心把不同專案的SSH連結貼錯並且把專案內容強制覆蓋，導致專案遺失，此經驗心得是需要辨別不同專案的SSH連結，並且要識別目前要操作的分支。提醒我的是往後要與同事合作，終端機要是詢問衝突，需要更細心地找尋為什麼衝突，而不是沒搞懂運作機制就是直接覆蓋掉，此舉在往後可能會造成專案上的問題。
+                  </p>
+                </ul>
+              </div>
             </div>
-            <li class="developSmallTitle">GitHub分支使用</li>
-            <div>辨識目前分支，作出適當操作，有衝突找尋原因</div>
-          </ul>
-        </ul>
+            <h3 class="developTitle">體會</h3>
+            <div class="feel-touching">
+              <div>
+                <ul>
+                  <li class="developSmallTitle">BoxModel的熟悉度</li>
+                  <p>在設定margin、padding..等等都會影響整體版面的呈現效果</p>
+                  <li class="developSmallTitle">結構的整理劃分</li>
+                  <p>
+                    結構在初期整理得越清晰明確，中後期設計樣式會更為方便、快速
+                  </p>
+                  <li class="developSmallTitle">統一風格</li>
+                  <p>
+                    細節的設計不要貪心，不是越多越好，是遵循當初所定的風格來實作
+                  </p>
+                  <li class="developSmallTitle">GitHub分支使用</li>
+                  <div>辨識目前分支，作出適當操作，有衝突找尋原因</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
-      <section class="selfPrinciple">
-        <h1>請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</h1>
-        <h3>「有事做、有人愛、有所期待」</h3>
-        <p>
-          透過積極參與事務與學習，目標的追求與實現，給予和接受他人的愛，以及對未來抱持期望，展現對生活目標的成長和人際關係的交流帶來滿足感。
-        </p>
+      <section class="selfPrinciple" id="selfPrinciple">
+        <section class="selfPrinciple-content">
+          <h1>請用簡短兩三句話，描述對你而言，最重要的一項人際交往原則。</h1>
+          <hr />
+          <h3>「有事做、有人愛、有所期待」</h3>
+          <p>
+            透過積極參與事務與學習，目標的追求與實現，給予和接受他人的愛，以及對未來抱持期望，展現對生活目標的成長和人際關係的交流帶來滿足感。
+          </p>
+        </section>
       </section>
-      <section class="anythingElse">
-        <h1>其他想要對我們說的事情？</h1>
-        <p>期待與各位想實現目標的同伴相見！</p>
+      <section class="anythingElse" id="anythingElse">
+        <section class="anythingElse-content">
+          <h1>其他想要對我們說的事情？</h1>
+          <hr />
+          <p>\ 期待與各位想實現目標的同伴相見 /</p>
+        </section>
       </section>
     </main>
   </body>
