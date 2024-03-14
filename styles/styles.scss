@@ -55,7 +55,7 @@ header {
   nav ul {
     list-style-type: none;
     li {
-      padding: 1rem 1rem;
+      padding: 0.5rem 1rem;
       a {
         text-decoration: none;
         padding: 0.5rem 0.5rem;
@@ -139,10 +139,13 @@ main {
       hr {
         border-top: 0.5px dashed #5b5b5b;
       }
+      div.a {
+        padding: 0.5rem;
+      }
       a {
         color: white;
         background-color: #d5d5d5;
-        padding: 0.25rem 0.5rem;
+        padding: 0.5rem 0.5rem;
         font-size: 1rem;
         border-radius: 20px;
         margin-top: 1rem;
@@ -152,11 +155,12 @@ main {
         transition: all 0.2s ease;
         &:hover {
           transform: scale(1.2);
+          color: #670a0a;
         }
       }
     }
   }
-
+  section.selfDoing,
   section.rangeLearningTime,
   section.emotionalMoment,
   section.selfPrinciple {
@@ -186,6 +190,12 @@ main {
       }
       p {
         margin: 0.5rem;
+      }
+
+      div {
+        ul {
+          list-style-type: disc;
+        }
       }
     }
   }

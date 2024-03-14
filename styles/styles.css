@@ -54,7 +54,7 @@ header nav ul {
   list-style-type: none;
 }
 header nav ul li {
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
 }
 header nav ul li a {
   text-decoration: none;
@@ -133,10 +133,13 @@ main section.selfDoing section.selfDoingText h1 {
 main section.selfDoing section.selfDoingText hr {
   border-top: 0.5px dashed #5b5b5b;
 }
+main section.selfDoing section.selfDoingText div.a {
+  padding: 0.5rem;
+}
 main section.selfDoing section.selfDoingText a {
   color: white;
   background-color: #d5d5d5;
-  padding: 0.25rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   font-size: 1rem;
   border-radius: 20px;
   margin-top: 1rem;
@@ -147,7 +150,9 @@ main section.selfDoing section.selfDoingText a {
 }
 main section.selfDoing section.selfDoingText a:hover {
   transform: scale(1.2);
+  color: #670a0a;
 }
+main section.selfDoing,
 main section.rangeLearningTime,
 main section.emotionalMoment,
 main section.selfPrinciple {
@@ -156,11 +161,13 @@ main section.selfPrinciple {
   display: flex;
   justify-content: center;
 }
+main section.selfDoing section,
 main section.rangeLearningTime section,
 main section.emotionalMoment section,
 main section.selfPrinciple section {
   width: 70%;
 }
+main section.selfDoing section h1,
 main section.rangeLearningTime section h1,
 main section.emotionalMoment section h1,
 main section.selfPrinciple section h1 {
@@ -169,26 +176,36 @@ main section.selfPrinciple section h1 {
   color: #5b5b5b;
   margin-bottom: 0.3rem;
 }
+main section.selfDoing section hr,
 main section.rangeLearningTime section hr,
 main section.emotionalMoment section hr,
 main section.selfPrinciple section hr {
   border-top: 0.5px dashed #5b5b5b;
 }
+main section.selfDoing section h3,
 main section.rangeLearningTime section h3,
 main section.emotionalMoment section h3,
 main section.selfPrinciple section h3 {
   text-align: center;
   margin: 0.5rem;
 }
+main section.selfDoing section h4,
 main section.rangeLearningTime section h4,
 main section.emotionalMoment section h4,
 main section.selfPrinciple section h4 {
   margin: 0.5rem;
 }
+main section.selfDoing section p,
 main section.rangeLearningTime section p,
 main section.emotionalMoment section p,
 main section.selfPrinciple section p {
   margin: 0.5rem;
+}
+main section.selfDoing section div ul,
+main section.rangeLearningTime section div ul,
+main section.emotionalMoment section div ul,
+main section.selfPrinciple section div ul {
+  list-style-type: disc;
 }
 main section.longingForCompany,
 main section.developpingExperience,
