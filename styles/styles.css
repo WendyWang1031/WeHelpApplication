@@ -76,7 +76,7 @@ main section.selfIntro {
 }
 main section.selfIntro div.info {
   flex-basis: 450px;
-  padding: 1rem;
+  padding: 4rem;
 }
 main section.selfIntro div.info h1.title {
   letter-spacing: 0.01rem;
@@ -112,6 +112,7 @@ main section.selfIntro div.info h3 {
 }
 main section.selfIntro div.img {
   flex-basis: 450px;
+  text-align: center;
 }
 main section.selfIntro div.img img {
   width: 60%;
